@@ -1,0 +1,45 @@
+<div class="modal modal--no-shadow modal--referral2 modal--program ">
+  <header class="modal__header">
+      <h2 class="modal__title heading">Register &amp; Join CertBolt Referral Program</h2>
+  </header>
+  <div class="modal__content modal__content--block modalPartRegister" style="display: none;">
+      <h3 class="modal__body-heading heading">Get 2 more Free Products By Inviting Your Friends to CertBolt</h3>
+      <ul class="modal__steps list">
+          <li class="modal__steps-item text">Invite a friend</li>
+          <li class="modal__steps-item text">Friend joins CertBolt</li>
+          <li class="modal__steps-item text">You get 2 more free products</li>
+      </ul>
+      <form class="modal__form modal__form--registration modal__form--center form" action="https://www.certlane.tk/register" method="post">
+          <div class="form__hint-wrapper-top"></div>
+          <input type="hidden" name="act[registerModal]" value="1">
+          <p class="registration__field-wrapper form__field-wrapper">
+              <label for="registration-email"><span class="visually-hidden">Email</span></label>
+              <input id="registration-email" class="form__field" type="email" name="email" placeholder="Email *" required="" maxlength="100" value="">
+          </p>
+          <p class="registration__field-wrapper form__field-wrapper">
+              <label for="registration-password"><span class="visually-hidden">Password</span></label>
+              <input id="registration-password" class="form__field" type="password" name="pass" placeholder="Password *" required="" maxlength="30">
+          </p>
+          <p class="registration__field-wrapper form__field-wrapper">
+              <label for="registration-password-confirm"><span class="visually-hidden">Confirm password</span></label>
+              <input id="registration-password-confirm" class="form__field" type="password" name="pass2" placeholder="Confirm password *" required="" maxlength="30">
+          </p>
+          <div class="modal__buttons-wrapper">
+              <button class="registration__submit-button button button--primary button--primary--large" type="submit">Register Now</button>
+              <span class="registration__between-buttons text text--extra-large">or</span>
+              <a class="registration__link link link--button showLoginPopup" href="https://www.certlane.tk/login">Login</a>
+          </div>
+      </form>
+  </div>
+  <div class="modal__content modal__content--block modalPartRegisterSuccess" style="">
+      <section class="registration registration--modal" style="padding-bottom:0;">
+          <div id="snippetCode"></div>
+          <p class="heading heading--small">Thank you for creating CertBolt account!</p>
+          <p class="text insertEmailSuccess">Please check your email <strong></strong> for a message from support@certbolt.com and follow the directions.</p>
+          <br>
+          <p class="heading heading--small">Alternative option of account activation</p>
+          <p class="text insertEmailSuccess">Send an email message from <strong></strong> to <a class="link" href="mailto:confirm@certbolt.com">confirm@certbolt.com</a> and your account will be activated.</p>
+      </section>
+  </div>
+  <button class="modal__close button modalCloseReferral" type="button"><span class="visually-hidden">Close</span></button>
+</div>

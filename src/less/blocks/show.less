@@ -1,0 +1,29 @@
+.show__0-768 {
+  display: none;
+}
+
+.show__0-992 {
+  display: none;
+}
+
+@media (max-width: @tablet-width) {
+  .show__0-992 {
+    display: initial;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .show__0-768 {
+    display: initial;
+  }
+
+  .show__768-higher {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .show__375-higher {
+    display: none;
+  }
+}

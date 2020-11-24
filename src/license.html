@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CertLane | License</title>
+    @@include('templates/head.html')
+  </head>
+  <body>
+    @@include('templates/header-inner.html')
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb" href="#">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <h1 class="page-main__heading page-main__heading--license heading heading--large">CertLane License Program</h1>
+
+        <section class="features">
+          <div class="features__program-wrapper">
+            <div class="features__text-wrapper">
+              <p class="features__text text text--large">Testking License Program was designed to help you earn. It is a perfect option for various training organizations, including training centers, colleges or universities, companies and other organizations who are motivated to provide quality training to their clients or employees along with improving their bottom line. Testking provides them with up-to-date learning solutions and efficient training they can pass on to their staff</p>
+              <h2 class="features__heading heading heading--blue">Why Choose CertLane?</h2>
+              <ul class="features__list list list--check-mark">
+                <li class="features__item text">Anytime and Anywhere Testing Engine Access Provided</li>
+                <li class="features__item text">Up-to-Date Upgrades for Free</li>
+              </ul>
+            </div>
+            <figure class="features__image-wrapper"><img class="features__image" src="images/other/features.jpg" alt="Features"></figure>
+          </div>
+          <div class="features__blocks-wrapper">
+            <section class="features__block">
+              <header class="features__block-header">
+                <h3 class="features__block-heading heading">CertLane Reseller Program</h3>
+              </header>
+              <ul class="features__block-list list list--check-mark">
+                <li class="features__block-item text">Make CertBolt part of your training program</li>
+                <li class="features__block-item text">Give away 10% off CertBolt promo code to your students</li>
+                <li class="features__block-item text">Earn 20% commission for any CertBolt sale with promo code</li>
+              </ul>
+            </section>
+            <section class="features__block">
+              <header class="features__block-header">
+                <h3 class="features__block-heading heading">Licensing for Education/Corporate</h3>
+              </header>
+              <ul class="features__block-list list list--check-mark">
+                <li class="features__block-item text">Get custom training solutions</li>
+                <li class="features__block-item text">Receive Testking products at lowest prices</li>
+                <li class="features__block-item text">Dedicated customer support manager</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="requirements">
+          <h2 class="visually-hidden">User Requirements</h2>
+          <form class="requirements__form form" action="#" method="post">
+            <h3 class="requirements__title heading">Please fill out your information below and Testking License Program Manager will get back to you with best solution according to your requirements:</h3>
+            <div class="requirements__group-fields-wrapper">
+              <p class="requirements__field-wrapper form__field-wrapper">
+                <label for="requirements-name"><span class="visually-hidden">Contact name</span></label>
+                <input id="requirements-name" class="form__field" type="text" name="requirements-name" placeholder="Contact Name *" required>
+              </p>
+              <p class="requirements__field-wrapper form__field-wrapper">
+                <label for="requirements-company"><span class="visually-hidden">Company</span></label>
+                <input id="requirements-company" class="form__field" type="text" name="requirements-company" placeholder="Company">
+              </p>
+              <p class="requirements__field-wrapper form__field-wrapper">
+                <label for="requirements-email"><span class="visually-hidden">Email address</span></label>
+                <input id="requirements-email" class="form__field" type="email" name="requirements-email" placeholder="Email Address *" required>
+              </p>
+              <p class="requirements__field-wrapper form__field-wrapper">
+                <label for="requirements-site-url"><span class="visually-hidden">WEB site url</span></label>
+                <input id="requirements-site-url" class="form__field" type="text" name="requirements-site-url" placeholder="WEB Site URL">
+              </p>
+              <p class="requirements__field-wrapper form__field-wrapper">
+                <label for="requirements-tel"><span class="visually-hidden">Valid phone number</span></label>
+                <input id="requirements-tel" class="form__field" type="number" name="requirements-tel" placeholder="Valid Phone Number *" required>
+              </p>
+              <p class="requirements__field-wrapper form__select-wrapper">
+                <label for="requirements-country"><span class="visually-hidden">Select country</span></label>
+                <select id="requirements-country" class="form__select" name="requirements-country" required>
+                  <option value="">Select Country *</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">United States of America</option>
+                  <option value="brasil">Brasil</option>
+                </select>
+              </p>
+            </div>
+            <h3 class="requirements__title heading">Tell us about your requirements:</h3>
+            <p class="requirements__field-wrapper requirements__field-wrapper--comments form__select-wrapper">
+              <label for="requirements-comments"><span class="visually-hidden">Comments</span></label>
+              <textarea id="requirements-comments" class="form__field" name="requirements-comments" placeholder="Comments"></textarea>
+            </p>
+            <div class="requirements__recapcha-wrapper form__recapcha-wrapper">
+              <p class="requirements__field-wrapper form__field-wrapper">
+                <label for="requirements-code"><span class="visually-hidden">Security code</span></label>
+                <input id="requirements-code" class="form__field" type="number" name="requirements-code" placeholder="Security Code *" required>
+              </p>
+              <figure class="form__recapcha"><img class="form__recapcha-image" src="images/other/capcha.jpg" alt="recapcha"></figure>
+              <button class="form__recapcha-refresh button button--primary" type="button">
+                <img class="form__recapcha-refresh-arrow" src="images/other/refresh-arrow.svg" alt="Refresh">
+                <span class="visually-hidden">Refresh</span>
+              </button>
+            </div>
+            <small class="requirements__code-text">Please enter security code exactly as shown</small>
+            <button class="requirements__submit-button button button--primary" type="submit">Submit</button>
+          </form>
+        </section>
+
+      </div>
+    </main>
+
+    @@include('templates/footer.html')
+    @@include('templates/over-page.html')

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CertLane | Login</title>
+    @@include('templates/head.html')
+  </head>
+  <body>
+    @@include('templates/header-inner.html')
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb" href="#">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="page-main__content-wrapper login__part-js">
+          <div class="page-main__main-content page-main__main-content--sidebar-no-fit page-main__main-content--bottom">
+
+            <section class="login">
+              <h1 class="login__heading heading heading--large">Login Now</h1>
+              <form class="login__form form" action="#" method="post">
+                <p class="login__field-wrapper form__field-wrapper">
+                  <label for="login-email"><span class="visually-hidden">Email</span></label>
+                  <input id="login-email" class="form__field" type="email" name="login-email" placeholder="E-mail *" required>
+                </p>
+                <p class="login__field-wrapper form__field-wrapper">
+                  <label for="login-password"><span class="visually-hidden">Password</span></label>
+                  <input id="login-password" class="form__field" type="password" name="login-password" placeholder="Password *" required>
+                </p>
+                <div class="login__buttons-wrapper">
+                  <button class="login__submit-button button button--primary button--primary--large" type="submit">Login</button>
+                  <span class="login__between-buttons text text--extra-large">or</span>
+                  <a class="login__link link link--button" href="#">Register New</a>
+                </div>
+                <p class="login__help text text--extra-large">Did you forget your password? <a class="link" href="#">Click here</a>.</p>
+              </form>
+            </section>
+
+          </div>
+
+          <aside class="page-main__right-sidebar page-main__right-sidebar--no-fit page-main__right-sidebar--help">
+
+            <section class="satisfied">
+              <h3 class="satisfied__heading heading heading--sidebar">
+                <span class="heading__large-part">Over <span class="heading__number">315,121</span></span>
+                Satisfied Customers Since 2002
+              </h3>
+              <ul class="satisfied__list list list--check-mark">
+                <li class="satisfied__item text">100% Real Exam Questions</li>
+                <li class="satisfied__item text">Accurate & Updated Answers</li>
+                <li class="satisfied__item text">Secured Customer Data</li>
+                <li class="satisfied__item text">Regular Free Updates</li>
+                <li class="satisfied__item text">99.6% Pass Rate</li>
+              </ul>
+            </section>
+            
+          </aside>
+        </div>
+
+      </div>
+    </main>
+
+    @@include('templates/footer.html')
+    @@include('templates/over-page.html')

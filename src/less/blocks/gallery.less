@@ -1,0 +1,123 @@
+.gallery {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.gallery__list {
+  .list-reset;
+}
+
+.gallery__item {
+  height: 430px;
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+}
+
+.gallery__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.gallery__pagination {
+  padding: 0 20px;
+  width: auto;
+
+  font-size: 17px;
+  line-height: 1.82;
+}
+
+.gallery__button {
+  width: 57px;
+  height: 57px;
+
+  border-radius: 50%;
+  border: 2px solid #e8eef9;
+  background-position: 55% 50%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/slider-arrow.png");
+
+  &--previous {
+    transform: rotate(180deg) rotateX(180deg);
+  }
+
+  &.swiper-button-disabled {
+    background-image: url("../images/icons/slider-arrow-disabled.png");
+    cursor: default;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .gallery {
+    padding-bottom: 15px;
+  }
+
+  .gallery__item {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    margin: 0 -10px;
+  }
+
+  .gallery__item {
+    padding: 0 10px;
+    height: 167px;
+    box-sizing: border-box;
+
+    &:first-child {
+      padding-left: 10px;
+    }
+
+    &:last-child {
+      padding-right: 10px;
+    }
+  }
+
+  .gallery__navigation {
+    padding: 10px 0;
+  }
+
+  .gallery__button {
+    position: absolute;
+    top: 58px;
+    width: 52px;
+    height: 52px;
+  
+    border: none;
+    background-position: 55% 50%;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/slider-arrow-white.png"), linear-gradient(to bottom, #f4b440, #faa537);
+  
+    &--previous {
+      left: 3px;
+      transform: rotate(180deg);
+      background-image: url("../images/icons/slider-arrow-white.png"), linear-gradient(to bottom, #faa537, #f4b440);
+  
+      &.swiper-button-disabled {
+        background-image: url("../images/icons/slider-arrow-white.png"), linear-gradient(to bottom, #faa537, #f4b440);
+        filter: grayscale(0.6);
+        opacity: 0.7;
+      }
+    }
+
+    &--next {
+      right: 3px;
+  
+      &.swiper-button-disabled {
+        background-image: url("../images/icons/slider-arrow-white.png"), linear-gradient(to bottom, #f4b440, #faa537);
+        filter: grayscale(0.6);
+        opacity: 0.7;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+<div class="modal modal--no-shadow modal--new-user2">
+
+  <div class="modal__part-wrapper">
+    <header class="modal__header">
+      <h2 class="modal__title heading">Create New CertLane Account</h2>
+    </header>
+    <div class="modal__content modal__content--block">
+      <form class="modal__form modal__form--login modal__form--center form" action="https://www.certlane.tk/register"
+        method="post">
+        <div class="form__hint-wrapper-top"></div>
+        <input type="hidden" name="act[loginModal]" value="1">
+        <p class="registration__field-wrapper form__field-wrapper">
+          <label for="registration-email"><span class="visually-hidden">Email</span></label>
+          <input id="registration-email" class="form__field" type="email" name="email" placeholder="Email *"
+            required="" maxlength="100" value="">
+        </p>
+        <p class="registration__field-wrapper form__field-wrapper">
+          <label for="registration-password"><span class="visually-hidden">Password</span></label>
+          <input id="registration-password" class="form__field" type="password" name="pass" placeholder="Password *"
+            required="" maxlength="30">
+        </p>
+        <p class="registration__field-wrapper form__field-wrapper">
+          <label for="registration-password-confirm"><span class="visually-hidden">Confirm password</span></label>
+          <input id="registration-password-confirm" class="form__field" type="password" name="pass2"
+            placeholder="Confirm password *" required="" maxlength="30">
+        </p>
+        <div class="modal__buttons-wrapper">
+          <button class="registration__submit-button button button--primary button--primary--large"
+            type="submit">Register Now</button>
+          <span class="registration__between-buttons text text--extra-large">or</span>
+          <a class="registration__link link link--button" href="https://www.certlane.tk/login">Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal__part-wrapper" style="display: none">
+    <header class="modal__header">
+      <h2 class="modal__title heading">Log into your CertLane Account</h2>
+    </header>
+    <div class="modal__content modal__content--block">
+      <form class="modal__form modal__form--login modal__form--center form" action="https://www.certlane.tk/login"
+        method="post">
+        <div class="form__hint-wrapper-top"></div>
+        <input type="hidden" name="act[loginModal]" value="1">
+        <p class="modal__field-wrapper modal__field-wrapper--login form__field-wrapper">
+          <label for="modal-email2"><span class="visually-hidden">Email</span></label>
+          <input id="modal-email2" class="form__field" type="email" name="email" placeholder="E-mail *" required=""
+            value="">
+        </p>
+        <p class="modal__field-wrapper modal__field-wrapper--login form__field-wrapper">
+          <label for="modal-password"><span class="visually-hidden">Password</span></label>
+          <input id="modal-password" class="form__field" type="password" name="pass" placeholder="Password *"
+            required="" value="">
+        </p>
+        <div class="modal__buttons-wrapper">
+          <button
+            class="modal__submit-button modal__submit-button--register button button--primary button--primary--large"
+            type="submit">Login</button>
+          <span class="modal__between-buttons text text--extra-large">or</span>
+          <a class="modal__switch-button modal__switch-button--register button link--button"
+            href="https://www.certlane.tk/register">Register New</a>
+        </div>
+        <p class="modal__help text text--extra-large">Did you forget your password? <a class="link"
+            href="https://www.certlane.tk/forgotpassword">Click here</a>.</p>
+      </form>
+      <small class="modal__notify modal__notify--center text text--small">* Only Registered Members can Download Exam
+        Questions &amp; Answers</small>
+    </div>
+  </div>
+
+  <div class="modal__part-wrapper" style="display: none">
+    <header class="modal__header">
+      <h2 class="modal__title heading">Create New CertLane Account</h2>
+    </header>
+    <div class="modal__content modal__content--block">
+      <section class="registration" style="padding-bottom: 0;">
+        <script>
+          fbq('track', 'Lead');
+        </script>
+        <h1 class="registration__heading heading heading--large registration__heading--full-width">Free Registration
+        </h1>
+        <div>
+          <p class="heading heading--small">Thank you for creating CertBolt account!</p>
+          <p class="text">Please check your email <strong>winter@mail.ru</strong> for a message from
+            support@certbolt.com and follow the directions.</p>
+          <br>
+          <p class="heading heading--small">Alternative option of account activation</p>
+          <p class="text">Send an email message from <strong>winter@mail.ru</strong> to <a class="link"
+              href="mailto:confirm@certbolt.com">confirm@certbolt.com</a> and your account will be activated.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <button class="modal__close button" type="button"><span class="visually-hidden">Close</span></button>
+
+</div>

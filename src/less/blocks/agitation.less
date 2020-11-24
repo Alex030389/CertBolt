@@ -1,0 +1,149 @@
+.agitation {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.agitation__heading {
+  text-align: center;
+}
+
+.agitation__text {
+  margin: 0 auto;
+  margin-bottom: 45px;
+  max-width: 660px;
+
+  text-align: center;
+  font-size: 21px;
+  line-height: 1.62;
+}
+
+.agitation__serach-form {
+  margin: 0;
+  margin-right: -40px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+
+  background-color: #f5f8fc;
+
+  &--full-width {
+    margin-right: 0;
+  }
+}
+
+.agitation__field-wrapper {
+  flex-grow: 1;
+  margin-right: 4.5%;
+}
+
+.agitation__search-field {
+  height: 100%;
+  
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: @text-color;
+
+  &::placeholder {
+    color: rgba(97, 134, 176, 0.5);
+  }
+}
+
+@media (max-width: 1024px) {
+  .agitation__serach-form {
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .agitation__serach-form {
+    margin-left: -20px;
+    padding: 20px;
+
+    &--full-width {
+      margin-right: -20px;
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .agitation {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+
+  .agitation__text {
+    margin-bottom: 5px;
+
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .agitation__serach-form {
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 20px 10px;
+
+    &--full-width {
+      .agitation__search-submit {
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: none;
+      }
+
+      .agitation__field-wrapper {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .agitation__field-wrapper {
+    margin-right: 0;
+    height: 50px;
+  }
+
+  .agitation__search-submit {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+
+    font-size: 16px;
+  }
+
+  .agitation__search-field {
+    padding: 0 115px 0 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .agitation__search-field.form__field {
+    height: 50px;
+  }
+
+  .agitation__serach-form {
+    &--full-width {
+      .selectric-wrapper {
+        height: 50px;
+      }
+
+      .form__select-wrapper {
+        .label {
+          line-height: 50px;
+        }
+      }
+
+      .agitation__field-wrapper {
+        width: calc(100% - 120px);
+      }
+    }
+  }
+
+  .agitation__heading,
+  .agitation__text {
+    text-align: left;
+  }
+}

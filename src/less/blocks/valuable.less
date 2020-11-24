@@ -1,0 +1,36 @@
+.valuable {
+  .shadow;
+  padding: 35px;
+
+  background-color: #ffffff;
+}
+
+.valuable__heading {
+  margin-bottom: 30px;
+}
+
+.valuable__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.valuable__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  width: 48%;
+  height: 60px;
+
+  background-color: #fafcff;
+  border: 1px solid #e3e9f6;
+
+  &:not(:nth-last-child(2)):not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.valuable__image {
+  flex-shrink: 0;
+}

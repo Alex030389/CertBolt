@@ -1,0 +1,184 @@
+.registration {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 88px;
+  transition: all 0.3s;
+
+  &--modal {
+    & > *:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .heading {
+      margin-bottom: 10px;
+    }
+
+    .text {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+.registration__heading {
+  width: 100%;
+  margin-bottom: 45px;
+  padding: 0;
+}
+
+.registration__form {
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.registration__field-wrapper {
+  &:not(:last-of-type) {
+    margin-bottom: 28px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 28px;
+  }
+}
+
+.registration__buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+}
+
+.registration__submit-button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.registration__button {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  color: @link-color;
+  font-size: 18px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.registration__hint {
+  margin: 0 7%;
+  max-width: 280px;
+
+  line-height: 1.5;
+}
+
+.registration__banner {
+  width: 410px;
+  max-width: calc(86% - 780px);
+}
+
+@media (max-width: 1440px) {
+  .registration {
+    flex-direction: column;
+
+    &--modal {
+      br {
+        display: none;
+      }
+
+      .text {
+        margin: 0 0 20px;
+      }
+    }
+  }
+
+  .registration__hint {
+    margin: 35px 0 0;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .registration {
+    padding-bottom: 0;
+  }
+
+  .registration__heading {
+    order: -2;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+
+    &--full-width {
+      max-width: none;
+    }
+  }
+
+  .registration__form {
+    width: auto;
+    max-width: none;
+  }
+
+  .registration__field-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  .registration__buttons-wrapper {
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  .registration__hint {
+    margin: 0 auto;
+    width: auto;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .registration {
+    padding-bottom: 0;
+  }
+
+  .registration__heading {
+    margin-bottom: 15px;
+  }
+
+  .registration__between-buttons {
+    display: none;
+  }
+
+  .registration__button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .registration__buttons-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .registration__submit-button {
+    width: 48.5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .registration__submit-button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

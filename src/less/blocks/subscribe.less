@@ -1,0 +1,50 @@
+.subscribe {
+  flex-basis: 470px;
+}
+
+.subscribe__title {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 24px;
+  font-family: "PTSans", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__field-wrapper {
+  flex-grow: 1;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.subscribe-field {
+  padding: 0 17px;
+  min-width: 210px;
+  height: 50px;
+
+  font-size: 16px;
+  color: @text-color;
+
+  box-shadow: 0 12px 16px 0 rgba(92, 2, 80, 0.33);
+
+  &::placeholder {
+    color: rgba(53, 76, 94, 0.7);
+    font-size: 16px;
+  }
+
+  &:focus {
+    box-shadow: 0 12px 16px 0 rgba(92, 2, 80, 0.33);
+  }
+}
+
+.page-footer__subscribe-submit {
+  padding: 5px 16px;
+  box-shadow: 0 12px 16px 0 rgba(92, 2, 80, 0.33);
+}
+
+@media (max-width: @tablet-width) {
+}

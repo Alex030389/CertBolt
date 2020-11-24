@@ -1,0 +1,31 @@
+.emails {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.emails__list {
+  .list-reset;
+}
+
+.emails__item {
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
+.emails__title {
+  margin-bottom: 0;
+}
+
+@media (max-width: @tablet-width) {
+  .emails {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .emails__item {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+}

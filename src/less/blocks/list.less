@@ -1,0 +1,156 @@
+.list {
+  .list-reset;
+
+  &--check-mark {
+    li {
+      position: relative;
+      padding-left: 45px;
+  
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 29px;
+        height: 24px;
+  
+        content: "";
+  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../images/icons/check-mark.png");
+      }
+  
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &--polycolumn {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    list-style: disc;
+    color: @link-color;
+
+    li {
+      width: 16.6%;
+      margin-bottom: 5px;
+      padding-right: 40px;
+    }
+    
+    a {
+      font-size: 20px;
+      color: @link-color;
+      color: inherit;
+      word-wrap: break-word;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.list__item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.list__item-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .list {
+    &--polycolumn {
+      li {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .list {
+    &--polycolumn {
+      li {
+        width: 25%;
+      }
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .list {
+    &--check-mark {
+      li {
+        padding-left: 30px;
+    
+        &::before {
+          width: 22px;
+          height: 19px;
+        }
+  
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &--margin-top {
+      margin-top: 0;
+    }
+
+    &--polycolumn {
+      padding-left: 20px;
+
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .list__item-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .list__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .list {
+    &--polycolumn {
+      li {
+        width: 33.3%;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .list {
+    &--polycolumn {
+      li {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.settings {
+  padding-bottom: 70px;
+}
+
+.settings__heading {
+  padding-top: 0;
+  padding-bottom: 35px;
+}
+
+.settings__group {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+
+.settings__checkbox-wrapper,
+.settings__field-wrapper {
+  max-width: 500px;
+}
+
+.settings__group-title {
+  margin-bottom: 25px;
+}
+
+.settings__checkbox-wrapper {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.settings__account-email {
+  display: flex;
+  align-items: center;
+  padding: 0 27px;
+  width: 100%;
+  height: 74px;
+  font-size: 21px;
+  font-weight: 700;
+  font-family: "Roboto", "Arial", sans-serif;
+  border-radius: 4px;
+  box-shadow: 0 10px 22px -10px rgba(91, 124, 196, 0.42);
+  background-color: #ffffff;
+}
+
+.settings__field-wrapper {
+  &:not(:last-of-type) {
+    margin-bottom: 28px;
+  }
+}
+
+.settings__submit-button {
+  margin-top: 50px;
+  padding-left: 74px;
+  padding-right: 74px;
+}
+
+@media (max-width: @mobile-width) {
+  .settings {
+    padding-bottom: 0;
+  }
+
+  .settings__account-email {
+    padding: 0 20px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .settings__heading {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
+
+  .settings__checkbox-wrapper,
+  .settings__field-wrapper {
+    max-width: none;
+  }
+
+  .settings__field-wrapper {
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .settings__submit-button {
+    margin-top: 20px;
+  }
+}

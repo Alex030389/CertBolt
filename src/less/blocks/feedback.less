@@ -1,0 +1,57 @@
+.feedback {
+  padding: 20px 10px 60px;
+}
+
+.feedback__heading {
+  margin-bottom: 30px;
+}
+
+.feedback__item {
+  &:not(:first-child) {
+    padding-top: 50px;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 55px;
+    border-bottom: 1px solid rgba(212, 221, 227, 0.9);
+  }
+}
+
+.feedback__title {
+  margin-bottom: 30px;
+}
+
+.feedback__rating-list {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.feedback__rating-item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.feedback__star-image {
+  width: 23px;
+  height: 23px;
+}
+
+.feedback__comment {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.feedback__author {
+  display: block;
+
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.feedback__author-location {
+  display: block;
+  font-size: 19px;
+  line-height: 1.5;
+}

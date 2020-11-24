@@ -1,0 +1,147 @@
+.features {
+  margin-bottom: 30px;
+}
+
+.features__program-wrapper {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.features__image-wrapper {
+  order: -1;
+  flex-shrink: 0;
+  margin: 0;
+  margin-right: 4%;
+  max-width: 300px;
+  max-height: 330px;
+
+  border-radius: 4px;
+  box-shadow: 0 18px 42px 0 rgba(91, 124, 196, 0.2);
+  overflow: hidden;
+}
+
+.features__image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+}
+
+.features__text {
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.features__heading {
+  margin-bottom: 25px;
+}
+
+.features__list {
+  column-count: 2; 
+}
+
+.features__item {
+  padding-right: 30px;
+}
+
+.features__blocks-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features__block {
+  .shadow;
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.features__block-header {
+  .header-gradient;
+  padding: 30px 40px;
+}
+
+.features__block-heading {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.features__block-list {
+  flex-grow: 1;
+  padding: 30px 40px 45px;
+
+  background-color: #ffffff;
+}
+
+@media (max-width: @tablet-width) {
+  .features__program-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .features__text {
+    margin-bottom: 30px;
+  }
+
+  .features__blocks-wrapper {
+    flex-direction: column;
+  }
+
+  .features__block {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .features__list {
+    column-count: auto;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .features {
+    margin-bottom: 25px;
+  }
+
+  .features__program-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .features__image-wrapper {
+    display: none;
+  }
+
+  .features__heading {
+    margin-bottom: 15px;
+    color: @text-color;
+    font-size: 24px;
+  }
+
+  .features__block {
+    box-shadow: none;
+  }
+
+  .features__block-header {
+    padding: 0;
+    background: none;
+  }
+
+  .features__block-heading {
+    margin-bottom: 15px;
+    font-family: "PTSans", "Arial", sans-serif;
+    color: @text-color;
+    font-size: 24px;
+  }
+
+  .features__block-list {
+    padding: 0;
+    background-color: transparent;
+  }
+}

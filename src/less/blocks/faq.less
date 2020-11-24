@@ -1,0 +1,286 @@
+.faq {
+  margin-bottom: 70px;
+}
+
+.faq__header {
+  .shadow;
+  .header-gradient;
+  padding: 30px 50px;
+
+  border-radius: 4px 4px 0 0;
+}
+
+.faq__heading {
+  font-family: "Lato", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.54;
+}
+
+.faq__heading-mobile-visible {
+  display: none;
+}
+
+.faq__navigation-list {
+  .shadow;
+  margin-bottom: 40px;
+  padding: 30px 50px 40px;
+
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+
+  .faq__navigation-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.faq__list {
+  .shadow;
+  padding: 35px 50px 65px;
+  
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.faq__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.faq__item-title {
+  margin-bottom: 20px;
+}
+
+.faq__questions-list {
+  counter-reset: myCounter;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #edf5fa;
+}
+
+.faq__questions-item {
+  &::before {
+    counter-increment: myCounter;
+
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    content: counter(myCounter) + '. ';
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.faq__answers-list {
+  counter-reset: myCounter;
+}
+
+.faq__answers-item {
+  &::before {
+    counter-increment: myCounter;
+
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    content: counter(myCounter) + '. ';
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  & > *:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+.faq__answers-title {
+  font-size: 22px;
+}
+
+.faq__answer,
+.faq__products-description {
+  font-size: 17px;
+  line-height: 1.53;
+}
+
+.faq__answer {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.faq__products-list {
+  padding-top: 30px;
+  padding-left: 25px;
+}
+
+.faq__products-item {
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+.faq__products-link {
+  display: inline-block;
+  margin-bottom: 15px;
+
+  vertical-align: top;
+}
+
+.faq__products-description {
+  margin: 0;
+}
+
+.faq__simple-list {
+  margin-bottom: 15px;
+}
+
+.faq__simple-item {
+  position: relative;
+  padding-left: 10px;
+
+  font-size: 17px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "-";
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .faq {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .faq {
+    margin-bottom: 15px;
+  }
+
+  .faq__header {
+    margin-bottom: 20px;
+    padding: 0;
+
+    background: none;
+    box-shadow: none;
+  }
+
+  .faq__heading {
+    margin-bottom: 0;
+
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 32px;
+    color: @text-color;
+  }
+
+  .faq__heading-desktop-visible {
+    display: none;
+  }
+
+  .faq__heading-mobile-visible {
+    display: inline;
+  }
+
+  .faq__navigation-list {
+    padding: 0;
+
+    background-color: transparent;
+    box-shadow: none;
+  
+    .faq__navigation-item {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .faq__list {
+    padding: 0;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .faq__questions-list {
+    margin: 0 -10px;
+    padding: 0 10px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+  }
+  
+  .faq__questions-item {
+    &::before {
+      font-size: 15px;
+    }
+  
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .faq__answers-item {
+    &::before {
+      font-size: 18px;
+    }
+  
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    & > *:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+  
+  .faq__answers-title {
+    font-size: 18px;
+  }
+
+  .faq__answer {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .faq__products-list {
+    padding-left: 15px;
+    padding-top: 0;
+  }
+
+  .faq__products-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .faq__products-link {
+    margin-bottom: 8px;
+  }
+
+  .faq__products-description {
+    font-size: 15px;
+  }
+
+  .faq__simple-list {
+    margin-bottom: 10px;
+  }
+  
+  .faq__simple-item {
+    padding-left: 10px;
+  
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,101 @@
+.reset-pass__icon {
+  float: left;
+  display: block;
+  margin: 40px 40px 15px 15px;
+  max-width: 150px;
+}
+
+.reset-pass__text {
+  margin: 0;
+  margin-bottom: 50px;
+
+  &--mb-fewer {
+    margin-bottom: 20px;
+  }
+}
+
+.reset-pass__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  max-width: 480px;
+}
+
+.reset-pass__field-wrapper {
+  flex-grow: 1;
+  margin-bottom: 28px;
+}
+
+.reset-pass__important-text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.reset-pass__small-text {
+  margin: 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.requirements__recapcha-wrapper {
+  flex-grow: 1;
+}
+
+.requirements__code-text {
+  width: 100%;
+}
+
+@media (max-width: @tablet-width) {
+  .reset-pass__field-wrapper {
+    margin-bottom: 20px;
+  }
+  .reset-pass {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .reset-pass__submit {
+    padding: 11px 28px;
+  }
+  .reset-pass {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reset-pass__form {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .reset-pass__heading {
+    margin-bottom: 0;
+  }
+
+  .reset-pass__icon {
+    max-width: 70px;
+    margin: 5px 15px 15px 0;
+  }
+
+  .reset-pass__text {
+    margin-bottom: 30px;
+
+    &--mb-fewer {
+      margin-bottom: 10px;
+    }
+  }
+
+  .reset-pass__form {
+    flex-direction: column;
+  }
+  
+  .reset-pass__submit {
+    margin-left: 0;
+    margin-top: 3%;
+  }
+}

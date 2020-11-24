@@ -1,0 +1,74 @@
+<div style="display:none;"><include src="dev/images/svg/sprite.svg"></include></div>
+
+<header class="page-header">
+  <div class="page-header__top">
+    <div class="container">
+      <button class="page-header__menu-button button" type="button">
+        <span class="visually-hidden">Menu</span>
+        <span class="page-header__menu-button-element" aria-hidden="true"></span>
+      </button>
+      <button class="page-header__search-button button" type="button">
+        <span class="visually-hidden">Search</span>
+        <svg class="page-header__search-icon" width="22" height="22" aria-hidden="true">
+          <use xlink:href="#inline-search-glass"></use>
+        </svg>
+      </button>
+      <a class="page-header__logo-link">
+        <img class="page-header__logo" width="250" src="images/logos/certline-logo.png" alt="CertLine">
+      </a>
+      <div class="page-header__search-form-wrapper">
+        <form class="page-header__serach-form form" action="#" method="post">
+          <p class="page-header__field-wrapper form__field-wrapper">
+            <label class="page-header__search-label" for="search-field"><span class="visually-hidden">Enter your text</span></label>
+            <input class="page-header__search-field form__field" type="search" name="search" id="search-field" placeholder="Enter your text" required autocomplete="off">
+          </p>
+          <button class="page-header__search-submit button button--primary" type="submit" onclick="this.blur();">Search</button>
+        </form>
+      </div>
+      <img class="page-header__secure-logo" src="images/logos/mcafee-logo.png" alt="McAfee Secure" title="McAfee Secure">
+    </div>
+  </div>
+  <div class="page-header__bottom page-header__bottom--inner">
+    <div class="container">
+      <nav class="page-header__main-menu main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link link main-menu__link--active">Home</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="#">Products</a>
+            @@include('products.html')
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="#">Video Courses</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="#">Enterprise</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="#">Referral Program</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="#">FAQ</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="#">Contact Us</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="#">Registration</a>
+          </li>
+        </ul>
+      </nav>
+      @@include('mobile-menu.html')
+      <div class="page-header__user-menu user-menu">
+        <ul class="user-menu__list">
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__link--cart link" href="#"><span class="visually-hidden--mobile">Cart</span></a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__link--sign-in link" href="#"><span class="visually-hidden--mobile">Sign In</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>

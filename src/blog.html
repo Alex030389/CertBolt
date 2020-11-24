@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CertLane | Blog</title>
+    @@include('templates/head.html')
+  </head>
+  <body>
+    @@include('templates/header-inner.html')
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb" href="#">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="page-main__content-wrapper">
+          <h1 class="page-main__heading heading heading--medium">Latest Posts</h1>
+          <div class="page-main__main-content page-main__main-content--bottom">
+            <section class="posts">
+              <h2 class="visually-hidden">Latest Posts</h2>
+              <ul class="posts__categories-list">
+                <li class="posts__categories-item">
+                  <a class="posts__categories-link link link--button" href="#">Top Certifications</a>
+                </li>
+                <li class="posts__categories-item">
+                  <a class="posts__categories-link link link--button link--button--active" href="#">Courses</a>
+                </li>
+                <li class="posts__categories-item">
+                  <a class="posts__categories-link link link--button" href="#">Learnings</a>
+                </li>
+                <li class="posts__categories-item">
+                  <a class="posts__categories-link link link--button" href="#">Products</a>
+                </li>
+              </ul>
+              <ul class="posts__list">
+                <li class="posts__item">
+                  <h2 class="posts__title heading heading--post">MythBusters: 11 Mobile Security Myths</h2>
+                  <p class="posts__text text">
+                    Mobile Security can simply be defined as the applicable techniques put in place for the purpose of securing data on our mobile devices like tablets, smartphones, laptops as well as other mobile devices. In other words, this is different atlternative methods mobile devices use for authenticating user and limit access to data store on their devices. Some of these means vary from simple password, screen locks and PINs (Personal Identification Numbers) to more complex  eye scanners, fingerprint readers and several other varieties of biometric reader. The importance Of Mobile Security…
+                  </p>
+                  <a class="posts__link link link--icon-border" href="#">Read More</a>
+                </li>
+                <li class="posts__item">
+                  <h2 class="posts__title heading heading--post">DevOps: Hot Skills, Tools, and Certifications</h2>
+                  <p class="posts__text text">
+                    We live in the age where almost every business or firm has a software branch. This could be an outcome of the world becoming so technically advanced that the global population using smartphones was found to be around 2.1 billion in 2016. This creates a whole new medium through which almost every company can engage the masses. Now, due to the need of up to date software attributes and so much competition in the market, a very high skill of software development is required. This led to an exponential trend…
+                  </p>
+                  <a class="posts__link link link--icon-border" href="#">Read More</a>
+                </li>
+                <li class="posts__item">
+                  <h2 class="posts__title heading heading--post">10 Hardest IT Jobs to Fill</h2>
+                  <p class="posts__text text">
+                    When you work in the IT sphere, you will get benefits that you cannot find from another place. The followings are some of the reasons why it is good to work in the IT jobs. IT professional is able to work in any industry or sector. The world requires the IT professionals    There are skills gap in the entire world in the technology industry. You should take the example of the government and business that are seeking to get digital transformation with the need of getting to the cybersecurity…
+                  </p>
+                  <a class="posts__link link link--icon-border" href="#">Read More</a>
+                </li>
+                <li class="posts__item">
+                  <h2 class="posts__title heading heading--post">Advantages of Being a Software Developer</h2>
+                  <p class="posts__text text">
+                    We live in the age where almost every business or firm has a software branch. This could be an outcome of the world becoming so technically advanced that the global population using smartphones was found to be around 2.1 billion in 2016. This creates a whole new medium through which almost every company can engage the masses. Now, due to the need of up to date software attributes and so much competition in the market, a very high skill of software development is required. 
+                  </p>
+                  <a class="posts__link link link--icon-border" href="#">Read More</a>
+                </li>
+                <li class="posts__item">
+                  <h2 class="posts__title heading heading--post">10 Most Wanted Tech Jobs for 2018</h2>
+                  <p class="posts__text text">
+                    Mobile Security can simply be defined as the applicable techniques put in place for the purpose of securing data on our mobile devices like tablets, smartphones, laptops as well as other mobile devices. In other words, this is different atlternative methods mobile devices use for authenticating user and limit access to data store on their devices. Some of these means vary from simple password, screen locks and PINs (Personal Identification Numbers) to more complex  eye scanners,...
+                  </p>
+                  <a class="posts__link link link--icon-border" href="#">Read More</a>
+                </li>
+              </ul>
+            </section>
+            <div class="pagination">
+              <button class="pagination__button pagination__button--previous pagination__button--disabled button button--primary" type="button"><span class="pagination__button-arrow"></span><span class="visually-hidden--mobile">Previous</span></button>
+              <ul class="pagination__list">
+                <li class="pagination__item"><a class="pagination__link pagination__link--active pagination__link--first-page" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                <li class="pagination__item pagination__item--dots">...</li>
+                <li class="pagination__item"><a class="pagination__link pagination__link--last-page" href="#">8</a></li>
+              </ul>
+              <button class="pagination__button pagination__button--next button button--primary" type="button"><span class="visually-hidden--mobile">Next</span><span class="pagination__button-arrow"></span></button>
+            </div>
+          </div>
+
+          <aside class="page-main__right-sidebar">
+            <form class="blog-sidebar__form form" action="#">
+              <p class="blog-sidebar__field-wrapper field__wrapper">
+                <label class="blog-sidebar__label" for="blog-search"><span class="visually-hidden">Search</span></label>
+                <input class="blog-sidebar__field form__field" type="search" name="blog-search" id="blog-search" placeholder="Search">
+                <button class="blog-sidebar__search-button button">
+                  <span class="visually-hidden">Search it</span>
+                  <svg class="blog-sidebar__search-icon" width="19" height="19" aria-hidden="true">
+                    <use xlink:href="#inline-search-glass"></use>
+                  </svg>
+                </button>
+              </p>
+            </form>
+            <ul class="blog-sidebar__list">
+              <li class="blog-sidebar__item">
+                <h2 class="blog-sidebar__title heading heading--medium">Popular Posts</h2>
+                <ul class="blog-sidebar__links-list">
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">Top Cyber Security Certifications that Will Rule the IT World in 2018</a>
+                  </li>
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">Best Paying IT Certifications in 2018</a>
+                  </li>
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">Top 6 Agile Certifications in 2018</a>
+                  </li>
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">Top 12 Cloud Certifications in 2018</a>
+                  </li>
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">10 Most Wanted Tech Jobs for 2018</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="blog-sidebar__item">
+                <h2 class="blog-sidebar__title heading heading--medium">Recent Posts</h2>
+                <ul class="blog-sidebar__links-list">
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">MythBusters: 11 Mobile Security Myths</a>
+                  </li>
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">DevOps: Hot Skills, Tools, and Certifications</a>
+                  </li>
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">10 Hardest IT Jobs to Fill</a>
+                  </li>
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">Advantages of Being a Software Developer</a>
+                  </li>
+                  <li class="blog-sidebar__links-item">
+                    <a class="blog-sidebar__link link" href="#">10 Most Wanted Tech Jobs for 2018</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="blog-sidebar__item">
+                <h2 class="blog-sidebar__title heading heading--medium">Recent Comments</h2>
+                <ul class="blog-sidebar__links-list">
+                  <li class="blog-sidebar__links-item blog-sidebar__links-item--comment">
+                    <span class="blog-sidebar__last-comment-author">Martin</span> 
+                    <a class="blog-sidebar__link blog-sidebar__link--comment link" href="#">on Top 7 Certifications to Start Your IT Career</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="blog-sidebar__item">
+                <h2 class="blog-sidebar__title heading heading--medium">Categories</h2>
+                <ul class="blog-sidebar__categories-list">
+                  <li class="blog-sidebar__categories-item">
+                    <a class="blog-sidebar__categories-link link link--button" href="#">Top Certifications</a>
+                  </li>
+                  <li class="blog-sidebar__categories-item">
+                    <a class="blog-sidebar__categories-link link link--button link--button--active" href="#">Courses</a>
+                  </li>
+                  <li class="blog-sidebar__categories-item">
+                    <a class="blog-sidebar__categories-link link link--button" href="#">Learnings</a>
+                  </li>
+                  <li class="blog-sidebar__categories-item">
+                    <a class="blog-sidebar__categories-link link link--button" href="#">Products</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    @@include('templates/footer.html')
+    @@include('templates/over-page.html')

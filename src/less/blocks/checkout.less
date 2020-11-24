@@ -1,0 +1,40 @@
+.checkout {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.checkout__bar {
+  display: none;
+}
+
+.checkout__text {
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+@media (max-width: @mobile-width) {
+  .checkout {
+    padding-bottom: 0;
+  }
+
+  .checkout__heading {
+    margin: 0;
+    padding: 20px 0 10px;
+  }
+
+  .checkout__text {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkout__heading,
+  .checkout__text {
+    display: none;
+  }
+
+  .checkout__bar {
+    display: block;
+    margin-bottom: 30px;
+  }
+}

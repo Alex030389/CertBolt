@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CertLane | Exam</title>
+    @@include('templates/head.html')
+  </head>
+  <body>
+    @@include('templates/header-inner.html')
+    </header>
+  
+    <main class="page-main">
+      <div class="container">
+      
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb" href="#">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb">404 / Not Found</a></li>
+          </ul>
+        </div>
+      
+        <div class="page-main__content-wrapper page-main__content-wrapper--full-width">
+
+          <section class="no-page">
+            <div class="no-page__error"><span class="no-page__number no-page__number--1">4</span><span class="no-page__number no-page__number--2">0</span><span class="no-page__number no-page__number--3">4</span></div>
+            <h2 class="no-page__heading heading">Sorry, page not found</h2>
+            <p class="no-page__text text text--large">It may have moved, or it may no longer be available. Please try one of the following options:</p>
+            <ul class="no-page__list text text--large">
+              <li class="no-page__item">Check the URL for proper spelling and capitalization.</li>
+              <li class="no-page__item">Try to access the page directly from the <a class="link" href="#">CertLane</a> homepage. If the page has moved, please reset your bookmark.</li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+    </main>
+  
+    @@include('templates/footer.html')
+
+    <div class="overlay">
+      @@include('templates/popups/modal-download.html')
+    </div>
+
+    @@include('templates/over-page.html')

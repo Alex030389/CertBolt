@@ -1,0 +1,20 @@
+[
+  "src/js/modules/menu.js",
+  "src/js/modules/mobile-search.js",
+  "src/js/modules/text-hiding.js",
+  "src/js/modules/tabs.js",
+  "src/js/modules/sliders.js",
+  "src/js/modules/form-password.js",
+  "src/js/modules/footer.js",
+  "src/js/modules/select.js",
+  "src/js/modules/form.js",
+  "src/js/modules/form-checkout.js",
+  "src/js/modules/modal.js",
+  "src/js/modules/text-hiding.js",
+  "src/js/modules/video-tabs.js",
+  "src/js/modules/accordion.js",
+  "src/js/modules/load-more.js",
+  "src/js/modules/login-registration.js",
+  "src/js/modules/initializations.js",
+  "src/js/modules/ather.js"
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CertLane | Account Settings</title>
+    @@include('templates/head.html')
+  </head>
+  <body>
+    @@include('templates/header-inner.html')
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb" href="#">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb">Account Settings</a></li>
+          </ul>
+        </div>
+
+        <div class="page-main__content-wrapper">
+          <div class="page-main__main-content page-main__main-content--account">
+            <section class="settings">
+              <h1 class="settings__heading heading heading--large">Account Settings</h1>
+              <form class="settings__form form" action="#" method="post">
+                <fieldset class="settings__group">
+                  <legend class="settings__group-title heading">General Notifications</legend>
+                  <p class="settings__checkbox-wrapper form__checkbox-wrapper">
+                    <input id="include" class="form__checkbox visually-hidden" type="checkbox" name="include-in-mailing-list" value="yes">
+                    <label class="form__checkbox-label" for="include">Include me in Testking mailing list</label>
+                  </p>
+                  <p class="settings__checkbox-wrapper form__checkbox-wrapper">
+                    <input id="notifications" class="form__checkbox visually-hidden" type="checkbox" name="notifications-of-update" value="yes">
+                    <label class="form__checkbox-label" for="notifications">I want to be notified when my products have been updates</label>
+                  </p>
+                  <p class="settings__checkbox-wrapper form__checkbox-wrapper">
+                    <input id="special-offers" class="form__checkbox visually-hidden" type="checkbox" name="special-offers" value="yes">
+                    <label class="form__checkbox-label" for="special-offers">I want to receive special offers from Testking partners</label>
+                  </p>
+                </fieldset>
+                <fieldset class="settings__group">
+                  <legend class="settings__group-title heading">Email Address & Password</legend>
+                  <p class="settings__field-wrapper form__field-wrapper">
+                    <span class="settings__account-email">pcollot@manhattan-sa.net</span>
+                  </p>
+                  <p class="settings__field-wrapper form__field-wrapper">
+                    <label for="settings-new-password"><span class="visually-hidden">New password</span></label>
+                    <input id="settings-new-password" class="form__field" type="password" name="settings-new-password" placeholder="Password">
+                  </p>
+                  <p class="settings__field-wrapper form__field-wrapper">
+                    <label for="settings-new-password-confirm"><span class="visually-hidden">Confirm password</span></label>
+                    <input id="settings-new-password-confirm" class="form__field" type="password" name="settings-new-password-confirm" placeholder="Confirm password">
+                  </p>
+                  <button class="settings__submit-button button button--primary button--primary--large" type="submit">Submit</button>
+                </fieldset>
+              </form>
+            </section>
+          </div>
+
+          <aside class="page-main__left-sidebar account-panel">
+            <ul class="account-panel__list list">
+              <li class="account-panel__item"><a class="account-panel__link account-panel__link--primary link" href="#">My Products</a>
+                <ul class="accaunt-panel__submenu-list">
+                  <li class="account-panel__item"><a class="account-panel__link account-panel__link--secondary link" href="#">Active Products</a></li>
+                  <li class="account-panel__item"><a class="account-panel__link account-panel__link--secondary link" href="#">Expired Products</a></li>
+                </ul>
+              </li>
+              <li class="account-panel__item"><a class="account-panel__link account-panel__link--primary link" href="#">Order / Invoices</a></li>
+              <li class="account-panel__item account-panel__item--active"><a class="account-panel__link account-panel__link--primary link" href="#">Account Settings</a></li>
+            </ul>
+            <div class="account-panel__log-out-wrapper"><a class="account-panel__log-out link" href="#">Log Out</a></div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    @@include('templates/footer.html')
+    @@include('templates/over-page.html')

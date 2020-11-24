@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CertLane | One Product</title>
+    @@include('templates/head.html')
+  </head>
+  <body>
+    @@include('templates/header-inner.html')
+    </header>
+  
+    <main class="page-main">
+      <div class="container">
+      
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb" href="#">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb" href="#">Comptia Exams</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link link link--breadcrumb">N10-006 (CompTIA Network+)</a></li>
+          </ul>
+        </div>
+      
+        <div class="page-main__content-wrapper page-main__content-wrapper--full-width">
+        
+          <section class="one-product">
+            <h1 class="one-product__heading one-product__heading--mobile heading heading--large">Pass VCP7-CMA Certification Exams Fast</h1>
+            <ul class="one-product__details-list one-product__details-list--no-bottom-line list">
+              <li class="one-product__details-item">
+                <strong>CertLane:</strong> VCP7-CMA
+              </li>
+              <li class="one-product__details-item">
+                <strong>Certification Full Name:</strong> VMware Certified Professional 7 - Cloud Management and Automation
+              </li>
+              <li class="one-product__details-item">
+                <strong>Certification Provider:</strong> VMware
+              </li>
+              <li class="one-product__details-item">
+                <strong>Exame Code:</strong> 2V0-731
+              </li>
+            </ul>
+          </section>
+
+          <section class="not-available" style="display: none;">
+            <h2 class="not-available__heading heading heading--large">AZ-103 exam is not available now</h2>
+            <p class="not-available__text text text--extra-large">Testking.com is working on getting AZ-102 exam available ASAP</p>
+            <p class="not-available__blue-text">Request AZ-103 exam here, you will get notified when it gets released</p>
+            <p class="not-available__text text text--large">Please provide your email address so we can inform you when requested AZ-103 exam will become available. Thanks! </p>
+            <form class="not-available__form form" action="#" method="post">
+              <p class="not-available__field-wrapper form__field-wrapper form__field-wrapper--email">
+                <label for="not-available-email"><span class="visually-hidden">Enter your email address</span></label>
+                <input class="not-available__fied form__field" type="email" name="email-field" id="not-available-email" placeholder="Enter your email address">
+              </p>
+              <button class="not-available__submit-button button button--primary button--primary--large">Request Exam</button>
+            </form>
+          </section>
+
+          <section class="not-available">
+            <h2 class="not-available__heading heading heading--large">70-680 Exam Has Been Retired</h2>
+            <p class="not-available__text text text--extra-large">This exam has been repiaced by <a class="link" href="#">Microsoft</a> with new exam.</p>
+          </section>
+        
+        </div>
+      </div>
+    </main>
+  
+    @@include('templates/footer.html')
+
+    <div class="overlay">
+      @@include('templates/popups/modal-download.html')
+    </div>
+
+    @@include('templates/over-page.html')

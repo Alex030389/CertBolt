@@ -1,0 +1,171 @@
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 65px;
+  margin-bottom: 70px;
+
+  border-bottom: 1px solid rgba(216, 226, 233, 0.75);
+}
+
+.rating__heading {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.rating__list {
+  counter-reset: myCounter 6;
+  width: calc(50% - 10px);
+}
+
+.rating__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 55px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+    padding-right: 1px;
+    width: 40px;
+    height: 40px;
+
+    font-weight: 900;
+    font-size: 15px;
+    line-height: normal;
+    color: #ffffff;
+    counter-increment: myCounter -1;
+    content:counter(myCounter);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/icons/star-yellow.png");
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.rating__indicator-bar {
+  flex-grow: 1;
+  margin-right: 15px;
+  height: 12px;
+
+  border-radius: 6px;
+  background-color: #e6e6e6;
+  box-shadow: inset 0 0 0 1px #dcdcdc;
+}
+
+.rating__indicator {
+  width: 0;
+  height: 100%;
+
+  border-radius: 6px;
+  background: #57c912 linear-gradient(to bottom, #7bd827, #37b108);
+}
+
+.rating__item-percents {
+  width: 42px;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.rating__total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: calc(50% - 10px);
+
+  border-radius: 6px;
+  background-color: #f3f4f6;
+  box-shadow: inset 0 0 0 1px #dcdcdc;
+}
+
+.rating__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-right: 10%;
+}
+
+.rating__total-large-text {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.rating__star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 3px;
+  width: 150px;
+  height: 150px;
+
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/icons/star-yellow.png");
+}
+
+@media (max-width: @mobile-width) {
+  .rating {
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: none;
+  }
+
+  .rating__list {
+    order: 1;
+    width: auto;
+    max-width: 500px
+  }
+
+  .rating__total {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    width: auto;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .rating__text-wrapper {
+    order: 1;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .rating__star {
+    padding-top: 6px;
+    padding-right: 0px;
+    width: 60px;
+    height: 60px;
+
+    font-size: 22px;
+  }
+
+  .rating__total-large-text {
+    font-size: 32px;
+  }
+}

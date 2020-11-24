@@ -1,0 +1,175 @@
+.page-main {
+  display: block;
+  padding-bottom: 70px;
+}
+
+.page-main__content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--full-width {
+    display: block;
+  }
+
+  &--no-breadcrumbs {
+    padding-top: 20px;
+  }
+
+  &--inner-page {
+    padding-top: 70px;
+  }
+}
+
+.page-main__left-sidebar {
+  order: -1;
+  margin-right: 6.9%;
+  width: 23.6%;
+}
+
+.page-main__main-content {
+  position: relative;
+  width: 69.4%;
+  transition: all 0.3s;
+
+  &--sidebar-no-fit {
+    width: calc(100% - 440px);
+  }
+}
+
+.page-main__flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__right-sidebar {
+  width: 30.5%;
+  padding-left: 5.5%;
+
+  &--no-fit {
+    width: 440px;
+  }
+
+  &--help {
+    section {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &--checkout {
+    padding-top: 40px;
+  }
+
+  &--videocourse {
+    padding-left: 9.7%;
+    width: 440px;
+  }
+
+  .secure:first-child {
+    padding-top: 0;
+  }
+}
+
+.page-main__heading {
+  width: 100%;
+  margin-bottom: 35px;
+
+  &--license {
+    margin-bottom: 60px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-main__main-content {
+    &--sidebar-no-fit {
+      width: calc(100% - 345px);
+    }
+  }
+  
+  .page-main__right-sidebar {
+    &--no-fit {
+      padding-left: 2%;
+      width: 345px;
+    }
+
+    &--videocourse {
+      width: 345px;
+      padding-left: 5%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-main__right-sidebar {
+    padding-left: 3%;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .page-main__content-wrapper {
+    &--inner-page {
+      padding-top: 40px;
+    }
+  }
+
+  .page-main__left-sidebar {
+    display: none;
+  }
+
+  .page-main__right-sidebar {
+    display: none;
+
+    &--no-fit {
+      display: block;
+
+      section:not(.help):not(.feedbacks__item) {
+        display: none;
+      }
+    }
+
+    &--help {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+
+  .page-main__main-content {
+    width: 100%;
+
+    &--account {
+      width: 65%;
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .page-main {
+    padding-bottom: 50px;
+  }
+
+  .page-main__content-wrapper {
+    &--inner-page {
+      padding-top: 20px;
+    }
+  }
+
+  .page-main__main-content {
+    &--account {
+      width: 100%;
+    }
+  }
+
+  .page-main__heading {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-main__content-wrapper {
+    &--no-breadcrumbs {
+      padding-top: 0;
+    }
+  }
+}

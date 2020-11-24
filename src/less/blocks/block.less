@@ -1,0 +1,33 @@
+.block {
+  padding-bottom: 88px;
+
+  &--white {
+    .shadow;
+    margin-bottom: 88px;
+    padding: 35px 50px 65px;
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .block {
+    padding-bottom: 50px;
+
+    &--white {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .block {
+    padding-bottom: 0;
+
+    &--white {
+      margin-bottom: 0;
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}

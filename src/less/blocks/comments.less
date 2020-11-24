@@ -1,0 +1,425 @@
+.comments {
+  position: relative;
+
+  &:not(&--videocourse) > *:first-child {
+    padding-top: 0;
+  }
+}
+
+.comments__heading {
+  margin-bottom: 30px;
+
+  &--videocourse {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    vertical-align: top;
+  }
+}
+
+.comments__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.comments__form-field-wrapper {
+  width: 48.5%;
+
+  &--comment {
+    margin-top: 28px;
+    width: 100%;
+  }
+
+  &--videocourse {
+    margin-bottom: 28px;
+  }
+}
+
+.comments__submit-button {
+  margin: 28px 0 0 25px;
+  padding: 21px 28px;
+
+  font-size: 28px;
+
+  &--videocourse {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+}
+
+.comments__hint {
+  display: inline-block;
+  margin-top: 10px;
+  color: #89979f;
+  vertical-align: top;
+}
+
+.comments__anchor-link {
+  display: none;
+}
+
+.comments__list {
+  &:not(:first-child) {
+    padding-top: 75px;
+  }
+}
+
+.comments__item {
+  &:not(:last-child) {
+    margin-bottom: 75px;
+  }
+}
+
+.comments__item-header {
+  display: flex;
+  align-items: center;
+}
+
+.comments__author {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: @link-color;
+}
+
+.comments__author-flag {
+  margin-right: 20px;
+  max-width: 23px;
+  max-height: 13px;
+}
+
+.comments__date {
+  font-size: 17px;
+  color: #89979f;
+}
+
+.comments__text {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.comments__rate-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-right: 25px;
+}
+
+.comments__rate-title {
+  margin-bottom: 15px;
+  font-size: 21px;
+}
+
+.comments__rate-stars-wrapper {
+  position: relative;
+
+  .form__hint {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(calc(100% + 3px));
+  }
+}
+
+.comments__rate-stars-list {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.comments__rate-star {
+  display: block;
+  width: 32px;
+  height: 31px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  background-image: url("../images/icons/star-gray.png");
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    width: 47px;
+  }
+
+  &:hover,
+  &:focus,
+  &:hover ~ .comments__rate-star,
+  &:focus ~ .comments__rate-star {
+    background-image: url("../images/icons/star-yellow.png");
+  }
+}
+
+.comments__rate-input {
+  &:checked + .comments__rate-star,
+  &:checked ~ .comments__rate-star {
+    background-image: url("../images/icons/star-yellow.png");
+  }
+}
+
+.comments__load-button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.comments__load-button {
+  font-size: 18px;
+}
+
+.comments__recapcha-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+
+  &--with-rating {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+
+  .requirements__code-text {
+    margin-bottom: 0;
+  }
+}
+
+.comments__recapcha-wrapper {
+  flex-grow: 1;
+}
+
+.comments__add-comment {
+  padding-top: 50px;
+}
+
+@media (max-width: 1380px) {
+  .comments__rate-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  .comments__recapcha-wrapper {
+    justify-content: flex-start;
+  }
+
+  .comments__rate-title {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .comments__rate-stars-wrapper {
+    .form__hint {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(100%);
+    }
+  }
+
+  .comments__submit-button {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .comments__recapcha-container {
+    &--not-full-width {
+      .comments__recapcha-wrapper {
+        width: 100%;
+      }
+      
+      .requirements__submit-button {
+        order: 4;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .comments {
+    padding-top: 0;
+  }
+
+  .comments__anchor-link {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 0;
+    font-weight: 700;
+  }
+
+  .comments__list {
+    &:not(:first-child) {
+      padding-top: 40px;
+    }
+  }
+
+  .comments__item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .comments__form-field-wrapper {
+    &--comment {
+      margin-top: 20px;
+    }
+  
+    &--videocourse {
+      margin-bottom: 20px;
+    }
+  }
+
+  .comments__recapcha-container {
+    &--not-full-width {
+      .comments__recapcha-wrapper {
+        width: auto;
+      }
+      
+      .requirements__submit-button {
+        order: 0;
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .comments {
+    &--videocourse {
+      padding-bottom: 0;
+    }
+
+    &--padding-top {
+      padding-top: 40px;
+    }
+  }
+
+  .comments__heading {
+    margin-bottom: 25px;
+
+    &--videocourse {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  .comments__list {
+    &:not(:first-child) {
+      padding-top: 25px;
+    }
+  }
+
+  .comments__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .comments__date {
+    font-size: 16px;
+  }
+
+  .comments__text {
+    margin-top: 10px;
+  }
+
+  .comments__submit-button {
+    margin-left: auto;
+    padding: 16px 55px;
+  
+    font-size: 16px;
+  }
+
+  .comments__load-button {
+    font-size: 15px;
+  }
+
+  .comments__anchor-link {
+    top: 7px;
+
+    &--below {
+      top: 47px;
+    }
+  }
+
+  .comments__hint {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .comments__rate-title {
+    font-size: 18px;
+  }
+
+  .comments__recapcha-container {
+    &--not-full-width {
+      .requirements__submit-button {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .comments__add-comment {
+    padding-top: 40px;
+  }
+
+  .comments__load-button-wrapper {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .comments__form-field-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    
+    &--comment {
+      margin-top: 0;
+    }
+  }
+
+  .comments__form {
+    flex-direction: column;
+  }
+
+  .comments__recapcha-wrapper {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .comments__recapcha-container {
+    &--not-full-width {
+      .comments__recapcha-wrapper {
+        width: 100%;
+      }
+      
+      .requirements__submit-button {
+        order: 4;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .comments__submit-button {
+    margin: 0 auto 0 0;
+  }
+
+  .comments__rate-star {
+    width: 24px;
+    height: 23px;
+
+    &:not(:last-of-type) {
+      width: 35px;
+    }
+  }
+}

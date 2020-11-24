@@ -1,0 +1,45 @@
+.testimonials {
+  margin: 0;
+}
+
+.testimonials__question {
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.testimonials__answer {
+  margin: 0;
+
+  &:not(:last-child) {    
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #deeaf1;
+  }
+}
+
+.testimonials__author {
+  margin: 0;
+  padding-top: 10px;
+  font-style: italic;
+  font-weight: 700;
+  text-align: right;
+
+  &::before {
+    content: "- ";
+  }
+
+  &::after {
+    content: " -";
+  }
+}
+
+.testimonials__item-footer {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__date {
+  margin-right: 12px;
+  font-size: 17px;
+  color: #89979f;
+}

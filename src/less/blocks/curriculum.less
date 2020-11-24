@@ -1,0 +1,111 @@
+.curriculum {
+  position: relative;
+  padding-bottom: 30px;
+
+  .top__featured-slider-button {
+    .transition;
+
+    &--previous {
+      transform: translate(-140%, -35%) rotate(180deg) rotateX(180deg);
+    }
+  }
+
+  .swiper-button-disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .top__slider-pagination {
+    margin-left: 0;
+  }
+}
+
+.curriculum__overlay {
+  position: absolute;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  .transition;
+
+  &--left {
+    left: 0;
+    background-image: linear-gradient(to right, @body-color 10%, transparent);
+  }
+
+  &--right {
+    right: 0;
+    background-image: linear-gradient(to left, @body-color 10%, transparent);
+  }
+
+  &--hidden {
+    width: 0;
+  }
+}
+
+@media (max-width: 1660px) {
+  .curriculum {
+    .top__featured-slider-button {
+      &--previous {
+        transform: translate(-30%, -35%) rotate(180deg) rotateX(180deg);
+      }
+
+      &--next {
+        transform: translate(30%, -35%);
+      }
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .curriculum {
+    .top__image-wrapper {
+      height: 180px;
+    }
+  }
+
+  .curriculum__overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .curriculum {
+    .top__list-wrapper {
+      overflow: visible;
+    }
+
+    .top__list {
+      flex-direction: column;
+    }
+
+    .top__item {
+      width: auto;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+
+    .top__link {
+      background-color: transparent;
+    }
+
+    .top__image-wrapper {
+      grid-area: image;
+      height: 100%;
+      border-bottom: none;
+    }
+
+    .top__item-title {
+      grid-area: title;
+      padding: 10px;
+    }
+
+    .top__load-button-wrapper {
+      margin-top: 20px;
+    }
+  }
+}

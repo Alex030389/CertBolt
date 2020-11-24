@@ -1,0 +1,150 @@
+.table {
+  width: 100%;
+  border-spacing: 0;
+
+  th, td {
+    padding: 0;
+
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    padding: 0 8px 20px 8px;
+    white-space: nowrap;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  td {
+    padding: 18px 8px;
+    border-top: 1px solid #deeaf1;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      text-align: right;
+    }
+  }  
+}
+
+.table__col {
+  &:first-child {
+    width: 10%;
+  }
+
+  &:nth-child(2) {
+    width: 70%;
+  }
+
+  &:nth-child(3) {
+    width: 10%;
+  }
+
+  &:last-child {
+    width: 10%;
+  }
+}
+
+.table__cell {
+  &:nth-child(3) {
+    span {
+      white-space: nowrap;
+    }
+  }
+}
+
+.table__text {
+  margin: 0;
+
+  & + .link {
+    display: inline-block;
+  }
+}
+
+.table--4-columns {
+  .text--grey {
+    color: #4a5e69;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .table {
+    &--4-columns {
+      display: block;
+
+      thead {
+        display: none;
+      }
+
+      tbody {
+        display: block;
+      }
+
+      td {
+        border-top: none;
+      }
+
+      .table__row {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+        border-top: 1px solid #deeaf1;
+      }
+
+      .table__cell {
+        display: flex;
+        justify-content: start;
+        margin: 0;
+        padding: 0;
+        color: @text-color;
+
+        & > *:first-child {
+          font-weight: 700;
+        }
+
+        & > *:last-child {
+          margin-left: 10px;
+        }
+      }
+
+      .table__cell-inner-wrapper {
+        flex-grow: 1;
+        display: flex;
+        .table__text {
+          align-self: flex-start;
+        }
+        .link {
+          margin-left: auto;
+        }
+      }
+
+      .text--grey {
+        color: #778891 !important;
+      }
+    }
+  }
+
+  .table__cell {
+    & > * {
+      display: inline-block;
+      padding: 5px 0;
+
+      vertical-align: top;
+    }
+  }
+
+  .table__mobile-title {
+    font-weight: 400;
+  }
+}
